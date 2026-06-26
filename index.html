@@ -538,6 +538,7 @@
         <p>南京泽舞文化传媒有限公司（NANJING ZEWU PUBLIC SPACE ART Co., Ltd）是一家专业的<strong>舞美公司</strong>与<strong>舞美设计公司</strong>，也是集<strong>舞台工程</strong>、<strong>舞美搭建</strong>、<strong>舞台搭建</strong>、<strong>舞美制作</strong>于一体的综合性<strong>舞台工程公司</strong>与<strong>舞美搭建公司</strong>。我们提供<strong>舞美工程全案</strong>及<strong>舞台设计施工一体化</strong>服务，涵盖演出空间设计制作、雕塑雕刻、舞台机械安装工程等领域。</p>
         <p>作为资深<strong>实景演出公司</strong>，我们参与制作了《东京梦华》、《王的战车》、《重启山海经》、《花开靖港》、《china》、《昆仑之约》、《梦里老家》、《嫦娥》、《四季周庄》、《报恩盛典》等遍及中国的十余台大型山水<strong>实景演出舞美设计</strong>与<strong>景区实景演出搭建</strong>项目，深耕<strong>文旅演艺舞美工程</strong>、<strong>户外实景演出舞美</strong>、<strong>沉浸式实景演出搭建</strong>及<strong>大型实景演出制作</strong>、<strong>实景演艺场景设计</strong>等方向。</p>
         <p>同时我们也是专业的<strong>影视置景公司</strong>与<strong>影视美术制作公司</strong>，提供<strong>电影场景搭建</strong>、<strong>电视综艺场景搭建</strong>、<strong>综艺节目舞美设计</strong>、<strong>影视实景搭建</strong>、<strong>演播厅舞美设计</strong>、<strong>电视栏目舞美制作</strong>及<strong>微短剧实景搭建</strong>、<strong>影视拍摄基地置景</strong>等服务；并在<strong>游乐园舞台工程</strong>、<strong>主题乐园舞美搭建</strong>、<strong>游乐园场景置景</strong>、<strong>游乐场舞台搭建</strong>、<strong>沉浸式游乐场景搭建</strong>、<strong>主题公园舞美工程</strong>、<strong>室内游乐园舞台设计</strong>与<strong>互动游乐场景制作</strong>领域拥有丰富经验，设计并制作了全国多家方特乐园的永久主题舞台、巡游花车及各类景观造型。</p>
+        <a href="#portfolio" class="about-btn">查看经典案例 &#10140;</a>
       </div>
       <div class="about-image reveal">
         <img src="images/intro/about.jpg" alt="南京泽舞文化传媒" loading="lazy">
@@ -553,27 +554,27 @@
       <p class="section-desc">多领域综合性专业舞美服务</p>
     </div>
     <div class="services-grid">
-      <div class="service-card reveal">
+      <div class="service-card reveal" data-category="live-performance">
         <div class="service-icon">&#127912;</div>
         <h4>实景演出与文旅演艺</h4>
         <p>实景演出舞美设计、景区实景演出搭建、文旅演艺舞美工程、沉浸式实景演出搭建、大型实景演出制作、实景演艺场景设计</p>
       </div>
-      <div class="service-card reveal">
+      <div class="service-card reveal" data-category="stage-engineering">
         <div class="service-icon">&#127914;</div>
         <h4>游乐园与主题工程</h4>
         <p>游乐园舞台工程、主题乐园舞美搭建、游乐园场景置景、游乐场舞台搭建、沉浸式游乐场景搭建、主题公园舞美工程、室内游乐园舞台设计、互动游乐场景制作</p>
       </div>
-      <div class="service-card reveal">
+      <div class="service-card reveal" data-category="film-scene">
         <div class="service-icon">&#127909;</div>
         <h4>影视与电视综艺置景</h4>
         <p>影视置景公司、电影场景搭建、电视综艺场景搭建、综艺节目舞美设计、演播厅舞美设计、电视栏目舞美制作、微短剧实景搭建、影视拍摄基地置景、影视美术制作公司</p>
       </div>
-      <div class="service-card reveal">
+      <div class="service-card reveal" data-category="tv-show">
         <div class="service-icon">&#127916;</div>
         <h4>舞美设计与搭建</h4>
         <p>一站式舞台搭建、舞美设计与搭建、舞美制作工厂、舞台设计施工一体化、专业综艺舞美团队、沉浸式舞台搭建公司、舞台机械安装工程</p>
       </div>
-      <div class="service-card reveal">
+      <div class="service-card reveal" data-category="stage-machinery">
         <div class="service-icon">&#9881;</div>
         <h4>舞台机械制作</h4>
         <p>专业舞台机械设备设计制造、舞台机械安装工程</p>
@@ -977,6 +978,21 @@
     <div class="gallery-counter" id="galleryCounter">1 / 10</div>
     
     <div class="gallery-thumbs" id="galleryThumbs"></div>
+    
+    <div class="gallery-footer">
+      <button class="gallery-next-project" id="galleryNextProject">
+        <div class="next-project-label">
+          <span class="next-project-line">下一个案例</span>
+          <span class="next-project-name" id="nextProjectName"></span>
+        </div>
+        <div class="next-project-arrow">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+            <line x1="5" y1="12" x2="19" y2="12"></line>
+            <polyline points="12 5 19 12 12 19"></polyline>
+          </svg>
+        </div>
+      </button>
+    </div>
   </div>
 
   <script>
@@ -1098,6 +1114,19 @@
         });
       });
     });
+
+    // 业务卡片点击跳转到对应案例分类
+    document.querySelectorAll('.service-card[data-category]').forEach(card => {
+      card.style.cursor = 'pointer';
+      card.addEventListener('click', () => {
+        const category = card.dataset.category;
+        const targetBtn = document.querySelector(`.filter-btn[data-filter="${category}"]`);
+        if (targetBtn) {
+          targetBtn.click();
+          document.getElementById('portfolio').scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }
+      });
+    });
   }
 
   /* ============ Gallery ============ */
@@ -1105,6 +1134,7 @@
     document.getElementById('galleryClose').addEventListener('click', closeGallery);
     document.getElementById('galleryPrev').addEventListener('click', () => navigateGallery(-1));
     document.getElementById('galleryNext').addEventListener('click', () => navigateGallery(1));
+    document.getElementById('galleryNextProject').addEventListener('click', goToNextProject);
     document.addEventListener('keydown', (e) => {
       const overlay = document.getElementById('galleryOverlay');
       if (!overlay.classList.contains('active')) return;
@@ -1112,6 +1142,17 @@
       if (e.key === 'ArrowLeft') navigateGallery(-1);
       if (e.key === 'ArrowRight') navigateGallery(1);
     });
+  }
+
+  function goToNextProject() {
+    if (!galleryProject) return;
+    const projects = PROJECT_DATA.projects;
+    const currentIdx = projects.findIndex(p => p.id === galleryProject.id);
+    if (currentIdx === -1) return;
+    const nextIdx = (currentIdx + 1) % projects.length;
+    const nextProject = projects[nextIdx];
+    closeGallery();
+    setTimeout(() => openGallery(nextProject), 450);
   }
 
   function openGallery(project) {
@@ -1125,9 +1166,11 @@
   function closeGallery() {
     document.getElementById('galleryOverlay').classList.remove('active');
     document.body.style.overflow = '';
-    const video = document.getElementById('galleryStage').querySelector('video');
-    if (video) { video.pause(); }
+    // 彻底清理stage，销毁视频元素避免内存泄漏和状态错乱
+    document.getElementById('galleryStage').innerHTML = '';
+    document.getElementById('galleryThumbs').innerHTML = '';
     galleryProject = null;
+    galleryIndex = 0;
   }
 
   function navigateGallery(direction) {
@@ -1216,6 +1259,16 @@
       thumb.addEventListener('click', () => { galleryIndex = actualIdx; renderGallery(); });
       thumbs.appendChild(thumb);
     });
+
+    // 更新"下一个案例"按钮名称
+    const projects = PROJECT_DATA.projects;
+    const currentIdx = projects.findIndex(p => p.id === galleryProject.id);
+    const nextIdx = (currentIdx + 1) % projects.length;
+    const nextName = projects[nextIdx].name;
+    const nextProjectNameEl = document.getElementById('nextProjectName');
+    if (nextProjectNameEl) {
+      nextProjectNameEl.textContent = nextName;
+    }
   }
 
   /* ============ 防下载保护 ============ */
