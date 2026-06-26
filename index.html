@@ -554,27 +554,27 @@
       <p class="section-desc">多领域综合性专业舞美服务</p>
     </div>
     <div class="services-grid">
-      <div class="service-card reveal" data-category="live-performance">
+      <div class="service-card reveal">
         <div class="service-icon">&#127912;</div>
         <h4>实景演出与文旅演艺</h4>
         <p>实景演出舞美设计、景区实景演出搭建、文旅演艺舞美工程、沉浸式实景演出搭建、大型实景演出制作、实景演艺场景设计</p>
       </div>
-      <div class="service-card reveal" data-category="stage-engineering">
+      <div class="service-card reveal">
         <div class="service-icon">&#127914;</div>
         <h4>游乐园与主题工程</h4>
         <p>游乐园舞台工程、主题乐园舞美搭建、游乐园场景置景、游乐场舞台搭建、沉浸式游乐场景搭建、主题公园舞美工程、室内游乐园舞台设计、互动游乐场景制作</p>
       </div>
-      <div class="service-card reveal" data-category="film-scene">
+      <div class="service-card reveal">
         <div class="service-icon">&#127909;</div>
         <h4>影视与电视综艺置景</h4>
         <p>影视置景公司、电影场景搭建、电视综艺场景搭建、综艺节目舞美设计、演播厅舞美设计、电视栏目舞美制作、微短剧实景搭建、影视拍摄基地置景、影视美术制作公司</p>
       </div>
-      <div class="service-card reveal" data-category="tv-show">
+      <div class="service-card reveal">
         <div class="service-icon">&#127916;</div>
         <h4>舞美设计与搭建</h4>
         <p>一站式舞台搭建、舞美设计与搭建、舞美制作工厂、舞台设计施工一体化、专业综艺舞美团队、沉浸式舞台搭建公司、舞台机械安装工程</p>
       </div>
-      <div class="service-card reveal" data-category="stage-machinery">
+      <div class="service-card reveal">
         <div class="service-icon">&#9881;</div>
         <h4>舞台机械制作</h4>
         <p>专业舞台机械设备设计制造、舞台机械安装工程</p>
@@ -981,16 +981,8 @@
     
     <div class="gallery-footer">
       <button class="gallery-next-project" id="galleryNextProject">
-        <div class="next-project-label">
-          <span class="next-project-line">下一个案例</span>
-          <span class="next-project-name" id="nextProjectName"></span>
-        </div>
-        <div class="next-project-arrow">
-          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
-            <line x1="5" y1="12" x2="19" y2="12"></line>
-            <polyline points="12 5 19 12 12 19"></polyline>
-          </svg>
-        </div>
+        <span>下一个案例</span>
+        <span>&#10140;</span>
       </button>
     </div>
   </div>
@@ -1114,19 +1106,6 @@
         });
       });
     });
-
-    // 业务卡片点击跳转到对应案例分类
-    document.querySelectorAll('.service-card[data-category]').forEach(card => {
-      card.style.cursor = 'pointer';
-      card.addEventListener('click', () => {
-        const category = card.dataset.category;
-        const targetBtn = document.querySelector(`.filter-btn[data-filter="${category}"]`);
-        if (targetBtn) {
-          targetBtn.click();
-          document.getElementById('portfolio').scrollIntoView({ behavior: 'smooth', block: 'start' });
-        }
-      });
-    });
   }
 
   /* ============ Gallery ============ */
@@ -1152,7 +1131,7 @@
     const nextIdx = (currentIdx + 1) % projects.length;
     const nextProject = projects[nextIdx];
     closeGallery();
-    setTimeout(() => openGallery(nextProject), 450);
+    setTimeout(() => openGallery(nextProject), 350);
   }
 
   function openGallery(project) {
@@ -1166,11 +1145,9 @@
   function closeGallery() {
     document.getElementById('galleryOverlay').classList.remove('active');
     document.body.style.overflow = '';
-    // 彻底清理stage，销毁视频元素避免内存泄漏和状态错乱
-    document.getElementById('galleryStage').innerHTML = '';
-    document.getElementById('galleryThumbs').innerHTML = '';
+    const video = document.getElementById('galleryStage').querySelector('video');
+    if (video) { video.pause(); }
     galleryProject = null;
-    galleryIndex = 0;
   }
 
   function navigateGallery(direction) {
@@ -1259,16 +1236,6 @@
       thumb.addEventListener('click', () => { galleryIndex = actualIdx; renderGallery(); });
       thumbs.appendChild(thumb);
     });
-
-    // 更新"下一个案例"按钮名称
-    const projects = PROJECT_DATA.projects;
-    const currentIdx = projects.findIndex(p => p.id === galleryProject.id);
-    const nextIdx = (currentIdx + 1) % projects.length;
-    const nextName = projects[nextIdx].name;
-    const nextProjectNameEl = document.getElementById('nextProjectName');
-    if (nextProjectNameEl) {
-      nextProjectNameEl.textContent = nextName;
-    }
   }
 
   /* ============ 防下载保护 ============ */
