@@ -1,0 +1,351 @@
+{
+  "实景演出": {
+    "en": "live-performance",
+    "desc": "山水实景演出舞美设计与制作",
+    "projects": {
+      "Tokyo-Dream": {
+        "name": "东京梦华",
+        "desc": "大型山水实景演出",
+        "images": [
+          "img_01.jpeg",
+          "img_02.jpeg",
+          "img_03.jpeg",
+          "img_04.jpeg",
+          "img_05.jpeg",
+          "img_06.jpeg",
+          "img_07.jpeg"
+        ],
+        "videos": [],
+        "image_count": 7,
+        "video_count": 0
+      },
+      "Kings-Chariot": {
+        "name": "王的战车",
+        "desc": "大型实景演出",
+        "images": [
+          "img_01.jpeg",
+          "img_02.jpeg",
+          "img_03.jpeg",
+          "img_04.png"
+        ],
+        "videos": [],
+        "image_count": 4,
+        "video_count": 0
+      },
+      "Shanhaijing": {
+        "name": "重启山海经",
+        "desc": "神话主题实景演出",
+        "images": [
+          "img_01.jpeg",
+          "img_02.jpeg",
+          "img_03.png",
+          "img_04.png",
+          "img_05.jpeg",
+          "img_06.jpeg",
+          "img_07.jpeg",
+          "img_08.jpeg",
+          "img_09.png"
+        ],
+        "videos": [],
+        "image_count": 9,
+        "video_count": 0
+      },
+      "Huakai-Jinggang": {
+        "name": "花开靖港",
+        "desc": "古镇实景演出",
+        "video": true,
+        "images": [
+          "img_01.png",
+          "img_02.jpeg",
+          "img_03.jpeg",
+          "img_04.jpeg",
+          "img_05.jpeg",
+          "img_06.jpeg",
+          "img_07.jpeg",
+          "img_08.jpeg",
+          "img_09.jpeg"
+        ],
+        "videos": [
+          "video.mp4"
+        ],
+        "image_count": 9,
+        "video_count": 1
+      },
+      "China-Show": {
+        "name": "china",
+        "desc": "大型实景演出",
+        "images": [
+          "img_01.jpeg",
+          "img_02.png",
+          "img_03.jpeg",
+          "img_04.jpeg",
+          "img_05.jpeg",
+          "img_06.jpeg",
+          "img_07.jpeg",
+          "img_08.jpeg",
+          "img_09.jpeg",
+          "img_10.jpeg"
+        ],
+        "videos": [],
+        "image_count": 10,
+        "video_count": 0
+      },
+      "Kunlun-Appointment": {
+        "name": "昆仑之约",
+        "desc": "大型实景演出",
+        "images": [
+          "img_01.jpeg",
+          "img_02.jpeg",
+          "img_03.jpeg",
+          "img_04.jpeg",
+          "img_05.jpeg",
+          "img_06.jpeg",
+          "img_07.jpeg",
+          "img_08.jpeg",
+          "img_09.jpeg"
+        ],
+        "videos": [],
+        "image_count": 9,
+        "video_count": 0
+      },
+      "Dream-Homeland": {
+        "name": "梦里老家",
+        "desc": "故乡主题实景演出",
+        "images": [
+          "img_01.png",
+          "img_02.png",
+          "img_03.jpeg",
+          "img_04.jpeg"
+        ],
+        "videos": [],
+        "image_count": 4,
+        "video_count": 0
+      },
+      "Chang-E": {
+        "name": "嫦娥",
+        "desc": "神话实景演出",
+        "images": [
+          "img_01.jpeg",
+          "img_02.jpeg",
+          "img_03.jpeg",
+          "img_04.jpeg",
+          "img_05.jpeg"
+        ],
+        "videos": [],
+        "image_count": 5,
+        "video_count": 0
+      },
+      "Famen-Past": {
+        "name": "法门往事",
+        "desc": "佛教文化实景演出",
+        "images": [
+          "img_01.jpeg"
+        ],
+        "videos": [],
+        "image_count": 1,
+        "video_count": 0
+      },
+      "Taishan-Ritual": {
+        "name": "泰山封禅大典",
+        "desc": "历史文化实景演出",
+        "images": [
+          "img_01.jpeg",
+          "img_02.jpeg",
+          "img_03.jpeg",
+          "img_04.jpeg",
+          "img_05.jpeg",
+          "img_06.jpeg",
+          "img_07.jpeg"
+        ],
+        "videos": [],
+        "image_count": 7,
+        "video_count": 0
+      },
+      "Shennongjia": {
+        "name": "秘境神农架",
+        "desc": "自然生态实景演出",
+        "images": [
+          "img_01.jpeg",
+          "img_02.jpeg",
+          "img_03.jpeg",
+          "img_04.jpeg",
+          "img_05.jpeg",
+          "img_06.jpeg"
+        ],
+        "videos": [],
+        "image_count": 6,
+        "video_count": 0
+      },
+      "Princess-Wencheng": {
+        "name": "文成公主",
+        "desc": "历史实景演出",
+        "images": [
+          "img_01.jpeg",
+          "img_02.jpeg"
+        ],
+        "videos": [],
+        "image_count": 2,
+        "video_count": 0
+      },
+      "Baoen-Ceremony": {
+        "name": "报恩盛典",
+        "desc": "佛教文化实景演出",
+        "images": [
+          "img_01.jpeg",
+          "img_02.jpeg"
+        ],
+        "videos": [],
+        "image_count": 2,
+        "video_count": 0
+      }
+    }
+  },
+  "舞台工程": {
+    "en": "stage-engineering",
+    "desc": "游乐园舞台及景观工程",
+    "projects": {
+      "Fantawild-Kingdom": {
+        "name": "方特欢乐王国广场舞台",
+        "desc": "永久主题舞台",
+        "images": [
+          "img_01.jpeg",
+          "img_02.jpeg"
+        ],
+        "videos": [],
+        "image_count": 2,
+        "video_count": 0
+      },
+      "Fantawild-Festival": {
+        "name": "方特节庆广场舞台",
+        "desc": "节庆主题舞台",
+        "images": [
+          "img_01.jpeg",
+          "img_02.jpeg",
+          "img_03.jpeg",
+          "img_04.jpeg"
+        ],
+        "videos": [],
+        "image_count": 4,
+        "video_count": 0
+      },
+      "Fantawild-Fountain": {
+        "name": "方特喷泉舞台",
+        "desc": "喷泉主题舞台",
+        "images": [
+          "img_01.png",
+          "img_02.png",
+          "img_03.png",
+          "img_04.png",
+          "img_05.png"
+        ],
+        "videos": [],
+        "image_count": 5,
+        "video_count": 0
+      },
+      "Mulan-Night-City": {
+        "name": "木兰不夜城",
+        "desc": "夜游主题舞台",
+        "images": [
+          "img_01.jpeg",
+          "img_02.jpeg",
+          "img_03.jpeg",
+          "img_04.jpeg"
+        ],
+        "videos": [],
+        "image_count": 4,
+        "video_count": 0
+      }
+    }
+  },
+  "电视节目": {
+    "en": "tv-show",
+    "desc": "综艺节目舞美设计与制作",
+    "projects": {
+      "If-You-Are-The-One": {
+        "name": "非诚勿扰",
+        "desc": "相亲综艺节目",
+        "images": [
+          "img_01.jpeg",
+          "img_02.jpeg",
+          "img_03.jpeg",
+          "img_04.jpeg"
+        ],
+        "videos": [],
+        "image_count": 4,
+        "video_count": 0
+      },
+      "Hot-Blood-Dance": {
+        "name": "热血街舞团",
+        "desc": "街舞竞技节目",
+        "images": [
+          "img_01.jpeg",
+          "img_02.jpeg",
+          "img_03.jpeg",
+          "img_04.jpeg",
+          "img_05.jpeg"
+        ],
+        "videos": [],
+        "image_count": 5,
+        "video_count": 0
+      }
+    }
+  },
+  "影视场景": {
+    "en": "film-scene",
+    "desc": "电影电视剧场景搭建",
+    "projects": {
+      "Arctic-TV": {
+        "name": "电视剧《北极》",
+        "desc": "电视剧场景搭建",
+        "images": [
+          "img_01.jpeg"
+        ],
+        "videos": [],
+        "image_count": 1,
+        "video_count": 0
+      },
+      "Fantasy-City": {
+        "name": "电视剧《幻城》",
+        "desc": "奇幻剧场景搭建",
+        "images": [
+          "img_01.jpeg",
+          "img_02.jpeg",
+          "img_03.jpeg",
+          "img_04.jpeg",
+          "img_05.jpeg",
+          "img_06.jpeg",
+          "img_07.jpeg",
+          "img_08.jpeg",
+          "img_09.jpeg",
+          "img_10.jpeg"
+        ],
+        "videos": [],
+        "image_count": 10,
+        "video_count": 0
+      }
+    }
+  },
+  "舞台机械": {
+    "en": "stage-machinery",
+    "desc": "舞台机械设备制作",
+    "projects": {
+      "Zhuge-Liang": {
+        "name": "草庐诸葛亮",
+        "desc": "舞台机械装置",
+        "images": [
+          "img_01.jpeg",
+          "img_02.jpeg",
+          "img_03.jpeg",
+          "img_04.jpeg",
+          "img_05.png",
+          "img_06.jpeg",
+          "img_07.jpeg",
+          "img_08.jpeg"
+        ],
+        "videos": [],
+        "image_count": 8,
+        "video_count": 0
+      }
+    }
+  }
+}
