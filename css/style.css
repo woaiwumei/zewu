@@ -343,6 +343,24 @@ body {
   pointer-events: none;
 }
 
+.about-btn {
+  display: inline-block;
+  margin-top: 28px;
+  padding: 14px 36px;
+  border: 1px solid var(--accent);
+  color: var(--accent);
+  font-family: var(--font-display);
+  font-size: 0.85rem;
+  letter-spacing: 3px;
+  text-decoration: none;
+  transition: all 0.4s var(--transition);
+}
+
+.about-btn:hover {
+  background: var(--accent);
+  color: var(--bg-primary);
+}
+
 /* === 业务领域 === */
 .services-section {
   padding: 120px 48px;
@@ -721,6 +739,106 @@ body {
   height: 100%;
   object-fit: cover;
   display: block;
+}
+
+/* 下一个案例按钮 — awwwards风格 */
+.gallery-footer {
+  display: flex;
+  justify-content: center;
+  padding: 0 40px 40px;
+}
+
+.gallery-next-project {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  padding: 16px 0;
+  background: transparent;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+}
+
+.next-project-label {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 6px;
+}
+
+.next-project-line {
+  font-family: var(--font-display);
+  font-size: 0.7rem;
+  letter-spacing: 4px;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  transition: color 0.4s ease;
+}
+
+.next-project-name {
+  font-family: var(--font-display);
+  font-size: 1.1rem;
+  letter-spacing: 2px;
+  font-weight: 500;
+  color: #fff;
+  position: relative;
+  padding-bottom: 4px;
+  transition: color 0.4s ease;
+}
+
+.next-project-name::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 1px;
+  background: var(--accent);
+  transition: width 0.5s var(--transition);
+}
+
+.next-project-arrow {
+  width: 48px;
+  height: 48px;
+  border: 1px solid rgba(255,255,255,0.15);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.5s var(--transition);
+  flex-shrink: 0;
+}
+
+.next-project-arrow svg {
+  width: 18px;
+  height: 18px;
+  transition: transform 0.5s var(--transition);
+}
+
+/* hover 效果 */
+.gallery-next-project:hover .next-project-line {
+  color: var(--accent);
+}
+
+.gallery-next-project:hover .next-project-name {
+  color: var(--accent);
+}
+
+.gallery-next-project:hover .next-project-name::after {
+  width: 100%;
+}
+
+.gallery-next-project:hover .next-project-arrow {
+  border-color: var(--accent);
+  background: var(--accent);
+  transform: translateX(4px);
+}
+
+.gallery-next-project:hover .next-project-arrow svg {
+  stroke: var(--bg-primary);
+  transform: translateX(2px);
 }
 
 /* 旧 Lightbox 隐藏 */
