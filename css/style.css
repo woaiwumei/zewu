@@ -141,6 +141,46 @@ body {
   width: 100%;
 }
 
+/* === 语言栏 === */
+.nav-right {
+  display: flex;
+  align-items: center;
+}
+
+.lang-bar {
+  display: flex;
+  align-items: center;
+  font-size: 0.75rem;
+  letter-spacing: 1px;
+  margin-left: 28px;
+  border-left: 1px solid rgba(255,255,255,0.15);
+  padding-left: 20px;
+}
+
+.lang-bar a,
+.lang-bar span {
+  color: var(--text-secondary);
+  text-decoration: none;
+  padding: 2px 6px;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.lang-bar a:hover {
+  color: var(--accent);
+}
+
+.lang-bar .current {
+  color: var(--accent);
+  font-weight: 600;
+}
+
+.lang-bar .sep {
+  color: var(--text-muted);
+  padding: 0 2px;
+  user-select: none;
+}
+
 /* === Hero区域 === */
 .hero {
   height: 100vh;
